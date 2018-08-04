@@ -1,0 +1,32 @@
+body{
+    height: 610px;
+        background: linear-gradient(lightblue, purple); /* Standard syntax (must be last) */
+    
+  }
+
+  h1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+ul {
+    list-style-type: none;
+  }
+
+  button {
+    background-color: lightskyblue; 
+    color: black; 
+    border: 2px solid lightblue;
+    padding: 16px 32px;
+    border-radius: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(193, 155, 207);
+    color: white;
+}
+
+
+
