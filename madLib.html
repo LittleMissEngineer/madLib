@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Mad Libs</title>
+        <link rel="stylesheet" type="text/css"href="madLib.css">
+      </head>
+      <body>
+        <center><h1>Mad Libs</h1></center>
+        <ul>
+            <center><li>Noun: <input type="text" id="noun"></center>
+          <center> <li>Adjective: <input type="text" id="adjective"></center>
+          <center> <li>Someone's Name: <input type="text" id="otherName"></center>
+        </ul>
+        <center><button class="button" id="libButton">Lib it!</button></center>
+    <center><div id="story"></div></center>
+
+<script>
+document.getElementById("libButton").addEventListener("click", makeMadLib);
+
+function makeMadLib(sentence){
+    var sentence = document.getElementById("story");//This is so the message is displayed on screen. "Story" refers
+    var noun = document.getElementById("noun").value;
+    var adjective = document.getElementById("adjective").value;
+    var otherName = document.getElementById("otherName").value;
+
+sentence.innerHTML =["Hi, " + noun + ". Sorry to inform you, but "  + adjective + " people are no longer allowed on campus accoording to " + otherName + " Sorry. :p"];
+   
+    }
+    </script>
+
+
+
+      </body>
+      </html>
